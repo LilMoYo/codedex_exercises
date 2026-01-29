@@ -1,17 +1,41 @@
-sz = ["summer", "fall", "winter", "spring"]
-ranking = ["2", "1", "3", "4"]
-print(sz) # prints out the list
+print ("Welcom to the DundunDugneon\n"
+       "You need to explore and solve few puzzles to escpape")
+Name = input("What is your name?: ")
+print (f"Lets begin your journey {Name} ! ")
 
-sz.append('eclipse') # adds eclipse to the end of the list
-sz.pop(4) # removes the value at index 4
-sz.remove("summer") # removes the value summer
-sz.insert(0,"summer")
+print ("You are in a dark room, you can only see a glimer of light thru the door, what will you do?\n"
+       "1) Go thourds the door\n"
+       "2) Check out the room you are in")
+answer = int(input("Enter answer 1 or 2: "))
+if answer == 1:
+    print("You are going thourds the door")
+    #libary()
+else:
+    print("There is nothing intresting in this room")
 
-zipped_data = zip(sz, ranking) #combines the list data
+print("What will you do now?\n"
+      "1) Go thourds the door\n"
+      "2) Look around the room")
+answer = int(input("Enter answer 1 or 2: "))
+if answer == 1:
+    print("You are going thours the door")
+else:
+    print("Yup there is nothing")
 
-list_zip = list(zipped_data)
+print("Soo what now?\n"
+      "1) Go thru that door that i told you about twice\n"
+      "2) Look around the room even more")
+answer = int(input("Please pick 1: "))
+if answer == 1:
+    print("You are going thours the door")
+else:
+    print("IT'S A ROOM AND IT'S EMPTY: ")
 
-print(min(ranking))
-print(max(ranking))
-print(len(list_zip))
-print(list_zip)
+print("...OK that room i cool and whatever but you need to make progress to escape\n"
+      "1) You are going thru that nice and tempting lookin door\n"
+      "2) You are looking at the empty room like a lunatic")
+answer = 2
+if answer == 1:
+    print("You are finaly going thours the door")
+else:
+    print("I Had enough, you have been forced *by magical power* thourd the door")

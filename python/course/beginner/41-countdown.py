@@ -1,4 +1,5 @@
-import datetime, bday_messages
+
+import datetime, bday_messages_41 as bday_messages
 
 today = datetime.date.today()
 next_birthday = datetime.date(2026, 3, 21)

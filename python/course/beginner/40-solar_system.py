@@ -1,3 +1,4 @@
+
 from math import pi
 from random import choice as ch
 
@@ -18,9 +19,9 @@ elif random_planet == "Venus":
     r = 6052
 elif random_planet == "Earth":
     r = 6371
-elif random_planet in "Mars":
+elif random_planet == "Mars":
     r = 3390
-elif random_planet in "Saturn":
+elif random_planet == "Saturn":
     r = 58232
 else:
     print("Oops! An error occurred.")
