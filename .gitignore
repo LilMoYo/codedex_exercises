@@ -1,1 +1,94 @@
-python/.DS_Store
+# =================================================================
+# 1. GENERAL & IDEs
+# =================================================================
+# System files
+.DS_Store
+Thumbs.db
+
+# IDEs and editors
+.idea/
+.project
+.classpath
+.c9/
+*.launch
+.settings/
+*.sublime-workspace
+
+# Visual Studio Code (Keep settings, ignore the rest)
+.vscode/*
+!.vscode/settings.json
+!.vscode/tasks.json
+!.vscode/launch.json
+!.vscode/extensions.json
+!.vscode/mcp.json
+.history/
+
+# Logs (Global rule)
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+
+# =================================================================
+# 2. FRONTEND (Angular & Node)
+# =================================================================
+# Compiled output
+/dist/
+frontend/dist/
+/tmp/
+/out-tsc/
+/bazel-out/
+
+# Dependencies
+node_modules/
+
+# Angular specific
+.angular/
+frontend/.angular/
+/coverage/
+/typings/
+__screenshots__/
+
+# =================================================================
+# 3. BACKEND (Python / FastAPI / UV)
+# =================================================================
+# Virtual Environments
+.venv/
+venv/
+env/
+core/venv/
+
+# Python Bytecode & Cache
+__pycache__/
+*.py[cod]
+*$py.class
+.pytest_cache/
+
+# Environment Variables (Security!)
+.env
+.env.local
+core/.env
+
+# UV / Python Builds
+build/
+*.egg-info/
+.coverage
+htmlcov/
+
+# =================================================================
+# 4. EXCEL & DATA SPECIFICS (Temporaries)
+# =================================================================
+# Ignore temporary Excel files created by Windows/Office (starts with ~$)
+~$*.xlsx
+~$*.xls
+~$*.csv
+
+# Local database files
+*.sqlite3
+*.db
+
+# =================================================================
+# 5. DOCKER & INFRASTRUCTURE
+# =================================================================
+.docker/
+docker-compose.override.yml
