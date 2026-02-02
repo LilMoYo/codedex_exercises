@@ -1,13 +1,5 @@
 earth_weight = float(input('What is your weight on Earth? '))
 
-# rl_mercury = 0.38
-# rl_venus = 0.91
-# rl_mars = 0.38
-# rl_jupiter = 2.53
-# rl_saturn = 1.07
-# rl_uranus = 0.89
-# rl_neptune = 1.14
-
 print("Which planet would you like to travel to?")
 print("1 - Mercury")
 print("2 - Venus")
