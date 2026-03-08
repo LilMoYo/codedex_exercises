@@ -1,4 +1,4 @@
-def analyze(percentages): #finishing boilerplate
+def analyze(percentages):
     years = len(percentages)
     net_change_per_year = 0
     first_3year_avg = 0
