@@ -7,7 +7,7 @@ def cut_pie(diameter, friends):
     cut_perfriend = circumference / friends
     print(f"Cut per friend: {cut_perfriend} inch")
     
-    return round(circumference,2), round(cut_perfriend,2)
+    return round(cut_perfriend,2)
     
 br_line = "--------------------------\n"
 
