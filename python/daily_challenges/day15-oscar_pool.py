@@ -7,8 +7,6 @@ def oscar_pool(predictions):
        ]
     
     pred_list = []
-    print(pred_list)
-    
     prediction_winner = []
     win_counter = []
     prediction_tie = ""
