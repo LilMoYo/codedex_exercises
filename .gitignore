@@ -1,11 +1,19 @@
 # =================================================================
-# 1. GENERAL & IDEs
+# 1. SYSTEM, IDEs & LOGS
 # =================================================================
-# System files
 .DS_Store
 Thumbs.db
+.history/
+.gemini
+.windsurf/
+*.log
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*
+lerna-debug.log*
 
-# IDEs and editors
+# IDEs
 .idea/
 .project
 .classpath
@@ -14,81 +22,83 @@ Thumbs.db
 .settings/
 *.sublime-workspace
 
-# Visual Studio Code (Keep settings, ignore the rest)
-.vscode/*
-!.vscode/settings.json
-!.vscode/tasks.json
-!.vscode/launch.json
-!.vscode/extensions.json
-!.vscode/mcp.json
-.history/
-
-# Logs (Global rule)
-*.log
-npm-debug.log*
-yarn-debug.log*
-yarn-error.log*
+# VS Code (Keep config, ignore runtime/internal data)
+.vscode/
+*.vscode/
+.idea
+*.suo
+*.ntvs*
+*.njsproj
+*.sln
+*.sw?
 
 # =================================================================
-# 2. FRONTEND (Angular & Node)
+# 2. FRONTEND (React, Angular, Vite, Node)
 # =================================================================
-# Compiled output
-/dist/
-frontend/dist/
+node_modules/
+**/node_modules/
+dist/
+**/dist/
+.angular/
+**/ .angular/
+.vite/
+.cache/
 /tmp/
 /out-tsc/
-/bazel-out/
-
-# Dependencies
-node_modules/
-
-# Angular specific
-.angular/
-frontend/.angular/
-/coverage/
-/typings/
-__screenshots__/
 
 # =================================================================
-# 3. BACKEND (Python / FastAPI / UV)
+# 3. BACKEND: PYTHON (Solus/FastAPI/UV)
 # =================================================================
-# Virtual Environments
-.venv/
-venv/
-env/
-core/venv/
-
-# Python Bytecode & Cache
 __pycache__/
+**/__pycache__/
+.venv/
+**/venv/
+.pytest_cache/
+.ruff_cache/
+.mypy_cache/
 *.py[cod]
 *$py.class
-.pytest_cache/
-
-# Environment Variables (Security!)
-.env
-.env.local
-core/.env
-
-# UV / Python Builds
-build/
-*.egg-info/
 .coverage
 htmlcov/
+build/
+*.egg-info/
 
 # =================================================================
-# 4. EXCEL & DATA SPECIFICS (Temporaries)
+# 4. BACKEND: RUST (MDJ-Core)
 # =================================================================
-# Ignore temporary Excel files created by Windows/Office (starts with ~$)
+target/
+**/target/
+**/*.rs.bk
+# Cargo.lock wird bei Applikationen meist eingecheckt, bei Libs nicht.
+
+# =================================================================
+# 5. DATA, EXCEL & SECRETS (Security!)
+# =================================================================
+# Excel Temporary Files (Windows/Office)
 ~$*.xlsx
 ~$*.xls
 ~$*.csv
 
-# Local database files
+# Secrets & Config
+.env
+.env.*
+!.env.example
+
+# Local Databases
 *.sqlite3
 *.db
 
 # =================================================================
-# 5. DOCKER & INFRASTRUCTURE
+# 6. DOCKER & INFRASTRUCTURE
 # =================================================================
 .docker/
 docker-compose.override.yml
+
+# Ignore all files in these directories...
+data/*
+assets/*
+Auto-Switch-Camera_v1_Takeyoh/*
+
+# ...but do not ignore the .gitkeep file itself
+!data/.gitkeep
+!assets/.gitkeep
